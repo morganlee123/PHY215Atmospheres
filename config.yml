@@ -1,12 +1,12 @@
 # The name of the project shown in the navigation bar (it links to the
 # home page).
-name: "Divvy data exploration project"
+name: "Planetary Atmosphere Exploration Project"
 
 # Link to the source repository (e.g., on Github, Gitlab).
-repo: "http://github.com/stephenslab/ipynb-website"
+repo: "https://github.com/morganlee123/PHY215Atmospheres"
 
 # Footer added to the bottom of some webpages.
-footer: "&copy; 2017 Peter Carbonetto &amp; Gao Wang"
+footer: "&copy; 2021 Morgan Sandler"
 
 # When set to True, populate the footer of each notebook with the git
 # commit id (SHA1) and commit modification date.
