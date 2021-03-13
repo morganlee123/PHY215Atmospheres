@@ -67,4 +67,4 @@ notebook_toc: False
 # remove_whiteline: False
 
 # Load a list of password protected folders / pages and their passwords
-password_file: .passwd
+#password_file: .passwd

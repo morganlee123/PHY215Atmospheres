@@ -1,3 +1,7 @@
+{%- extends 'basic.tpl' -%}
+
+{%- block header -%}
+{{ super() }}
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -179,19 +183,7 @@ body {
 </li>
         
 <li>
-  <a href="../setup.html">Setup</a>
-</li>
-        
-<li>
-  <a href="../license.html">License</a>
-</li>
-        
-<li>
-  <a href="../notes.html">Notes</a>
-</li>
-        
-<li>
-  <a href="../protected.html">Protected</a>
+  <a href="../about.html">About</a>
 </li>
         
       </ul>
@@ -205,33 +197,14 @@ body {
       </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="This-page-is-password-protected">This page is password protected<a class="anchor-link" href="#This-page-is-password-protected">&#182;</a></h1><p>You can access this page by typing in password: <code>protect_page</code> when asked.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>FIXME: should elaborate on the caveats and point sugguestions to alternatives</strong></p>
-<ol>
-<li>This mechanism simply renamed a page to a "random" string based on provided password</li>
-<li>Additionally a <a href="https://support.google.com/webmasters/answer/93710?hl=en"><code>metatag</code></a> is added to the renamed page:
-<pre><code>&lt;meta name="robots" content="noindex"&gt;</code></pre>
-</li>
-</ol>
-<p>Please only use this feature if these protections are secure enough for your needs.</p>
+{%- endblock header -%}
 
-</div>
-</div>
-</div>
+{% block footer %}
 <hr>
 &copy; 2021 Morgan Sandler
-<p><small>Exported from <a href="https://github.com/morganlee123/PHY215Atmospheres/blob/1fdb2d4911e284bf39157b43a09894348c1043ce/protected/protected_page.ipynb"><code>protected/protected_page.ipynb</code></a> committed by Morgan Sandler on Fri Mar 12 18:29:34 2021 <a href="https://github.com/morganlee123/PHY215Atmospheres/commit/1fdb2d4911e284bf39157b43a09894348c1043ce">revision 1, 1fdb2d4</a> <a href="https://stephenslab.github.io/ipynb-website/notes.html#Note-about-commit-ids"><span class="fa fa-question-circle"></span></a></small></p>
 </div>
 </div>
 </body>
 </html>
+{% endblock %}
