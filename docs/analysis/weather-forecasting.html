@@ -204,7 +204,7 @@ body {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Weather forecasting we take for granted on the daily. We are used to the ability to reference any device for the latest information that will save us time. It lets us know whether to wear a jacket or not outside. We plan trips around weather. Weather decides if an event will be indoors or outdoors. The National Meteorological Center/National Centers for Environmental Prediction has been developing a program since the early 50s which they refer to as the Global Forecasting System or GFS. Since its initial release, there have been many increments of development. The most recent iteration uses a module called FV3 which stands for: the Finite Volume Model on the Cubed Sphere Grid Version 3. The increase in performance given by the FV3 extension can be seen in the following figure from weather.gov [1]</p>
-<p><img src="fv3.png" alt="Weather gov figure"></p>
+<p><img src="https://raw.githubusercontent.com/morganlee123/PHY215Atmospheres/master/analysis/fv3.png" alt="Weather gov figure"></p>
 
 </div>
 </div>
@@ -216,14 +216,14 @@ body {
 <p>The total mass of dry air and water categories is solved for by dynamical equations. This incoprorates the effect of condensate loading into the air mass without a special paramerization for loading. [2]</p>
 <p>The dry air mass (per unit area) can be given as:</p>
 <p>$\delta{m_d}$ refers to the dry mass change in an air mass. $\delta{p^{*}}$ is the water category mass. N is the precise number of water species used in the simulation (e.g Vapors). Aerosols and ozone are negligible in this system as they are very small [2]</p>
-<p><img src="dryweight.png" alt="dryweight.png"></p>
+<p><img src="https://raw.githubusercontent.com/morganlee123/PHY215Atmospheres/master/analysis/dryweight.png" alt="dryweight.png"></p>
 <p>where $Q_m = \delta{p^{*}q_{m}}$ is the tracer mass.</p>
 <p>Since dry mass should be conserved by the physical parametrizations [2], $\delta{m_d}$ should be a constant in each grid cell for prediction. This gives a condition for dry mass conservation as [2]:</p>
-<p><img src="dryconservation.png" alt="dryconservation"></p>
+<p><img src="https://raw.githubusercontent.com/morganlee123/PHY215Atmospheres/master/analysis/dryconservation.png" alt="dryconservation"></p>
 <p>where $\Delta{M} = 1 + \delta{\tau}\sum{m=1}{N}\frac{dq_{i}}{dt}$. The physics package from GFS returns a rate of change in tracer mass $dQ_m/dt$ and is independent of whether the total air mass or dry air mass is solved with. This updates through this following equation[2]:</p>
-<p><img src="tracerupdate.png" alt="tracerupdate"></p>
+<p><img src="https://raw.githubusercontent.com/morganlee123/PHY215Atmospheres/master/analysis/tracerupdate.png" alt="tracerupdate"></p>
 <p>This finally gives an algorithm for mass conservation[2]:</p>
-<p><img src="mca.png" alt="Mass conservation algorithm"></p>
+<p><img src="https://raw.githubusercontent.com/morganlee123/PHY215Atmospheres/master/analysis/mca.png" alt="Mass conservation algorithm"></p>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ body {
 </div>
 <hr>
 &copy; 2021 Morgan Sandler
-<p><small>Exported from <a href="https://github.com/morganlee123/PHY215Atmospheres/blob/5b0b4d49cc5b7cd69a7b5d04734dbd0b7d9eb828/analysis/weather-forecasting.ipynb"><code>analysis/weather-forecasting.ipynb</code></a> committed by Morgan Sandler on Sun Mar 14 23:27:20 2021 <a href="https://github.com/morganlee123/PHY215Atmospheres/commit/5b0b4d49cc5b7cd69a7b5d04734dbd0b7d9eb828">revision 1, 5b0b4d4</a> <a href="https://stephenslab.github.io/ipynb-website/notes.html#Note-about-commit-ids"><span class="fa fa-question-circle"></span></a></small></p>
+<p><small>Exported from <a href="https://github.com/morganlee123/PHY215Atmospheres/blob/4ee709bdee192deac5a11da7dbc0039f9a82462f/analysis/weather-forecasting.ipynb"><code>analysis/weather-forecasting.ipynb</code></a> committed by Morgan Sandler on Sun Mar 14 23:37:52 2021 <a href="https://github.com/morganlee123/PHY215Atmospheres/commit/4ee709bdee192deac5a11da7dbc0039f9a82462f">revision 2, 4ee709b</a> <a href="https://stephenslab.github.io/ipynb-website/notes.html#Note-about-commit-ids"><span class="fa fa-question-circle"></span></a></small></p>
 </div>
 </div>
 </body>
