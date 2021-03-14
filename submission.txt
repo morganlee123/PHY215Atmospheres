@@ -1,0 +1,15 @@
+Here is the link to my project one. I sent additional information to your email.
+https://morganlee123.github.io/PHY215Atmospheres/
+
+The page consists of three modules
+
+1. New weather forecasting physics in the Global Forecasting System
+2. Spectrographic readings for determining habitability of other planets
+3. Climate modeling to learn more about our impact on planet Earth
+
+The first module is implemented to meet the requirements of project 1. The last two will be implemented by project 2.
+
+If you have any questions or clarifications you'd like to be made. Please reach out to me at sandle20@msu.edu
+
+Thanks,
+Morgan
