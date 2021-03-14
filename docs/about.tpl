@@ -183,10 +183,6 @@ body {
 </li>
         
 <li>
-  <a href="../help.html">Help</a>
-</li>
-        
-<li>
   <a href="../about.html">About</a>
 </li>
         
