@@ -1,6 +1,8 @@
 docs/about.html
 docs/about.tpl
 docs/analysis.tpl
+docs/analysis/climatemodels.html
+docs/analysis/habitable.html
 docs/analysis/weather-forecasting.html
 docs/index.html
 docs/index.tpl
